@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom'
 import './index.scss'
 import './app.styles.scss'
 import Home from './pages/Home'
-import Landing from './pages/Landing'
 import Login from './pages/Login'
 import Me from './pages/Me'
 import Register from './pages/Register'
@@ -13,7 +12,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' component={Landing} />
+        <Route exact path='/' component={Login} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
         <PrivateRoute exact path='/channels' component={Home} />
