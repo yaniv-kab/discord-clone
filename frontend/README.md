@@ -9,10 +9,10 @@ Discord Clone using React, ReactQuery, Tailwindcss, Redux, Socket IO, NodeJS, Ex
 Install the dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 then blow command:
 ```bash
-yarn start
+npm start
 ```

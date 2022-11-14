@@ -14,7 +14,7 @@ inside backend directory
 Install the dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 <br/>
@@ -24,7 +24,7 @@ using Docker.
 
 ```bash
 # run MongoDB and Redis containers
-yarn docker:dev
+npm run docker:dev
 ```
 
 <br/>
@@ -41,7 +41,7 @@ cp .env.example .env
 Running locally:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 now backend will be running on `http://localhost:4000`

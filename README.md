@@ -1,12 +1,5 @@
 Discord Clone using React, ReactQuery, Tailwindcss, Redux, Socket IO, NodeJS, Express, MongoDB and Redis.
 
-
-[Online Demo](https://discord-clone-ashy.vercel.app/)
-
-[youtube video demo](https://www.youtube.com/watch?v=t8-wSFGRUQc)
-
-![demo](https://i.imgur.com/JmVX2CZ.png)
-
 <br/>
 
 ## features
