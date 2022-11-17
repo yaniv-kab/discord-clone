@@ -23,6 +23,6 @@ jobs:
       - name: get into backend project
         run: cd backend/
       - name: Install dependencies
-        run: npm ci
+        run: npm i
       - name: Run the tests
         run: npm run test
