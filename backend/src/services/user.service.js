@@ -2,9 +2,9 @@ const httpStatus = require('http-status');
 const ShortUniqueId = require('short-unique-id');
 const { User } = require('../models');
 const ApiError = require('../utils/ApiError');
-const {COLORS} = require('../config/constants/modelsConstants')
-const uid = new ShortUniqueId({ length: 4, dictionary: [0,1,2,3,4,5,6,7,8,9] });
+const { COLORS } = require('../config/constants/modelsConstants');
 
+const uid = new ShortUniqueId({ length: 4, dictionary: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] });
 
 /**
  * Create a user
@@ -16,8 +16,8 @@ const createUser = async (userBody) => {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Email already taken');
   }
 
-  userBody.shortId = uid()
-  userBody.color = COLORS[Math.floor(Math.random() * COLORS.length)]
+  userBody.shortId = uid();
+  userBody.color = COLORS[Math.floor(Math.random() * COLORS.length)];
   const user = await User.create(userBody);
   return user;
 };
