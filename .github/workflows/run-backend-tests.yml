@@ -22,8 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: get into backend project
         run: cd backend/
-      - name: Create .env from _env
-        run: cp _env .env
       - name: Install dependencies
         run: npm ci
       - name: Run the tests
